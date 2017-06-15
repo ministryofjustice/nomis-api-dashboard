@@ -2,7 +2,14 @@
 <style>
 .internal_frame {
     float: left;
-    width: 50%;
+    border: none;
+}
+
+#jenkins {
+  width: 30%;
+}
+#kibana {
+  width: 70%;
 }
 
 .internal_frame iframe {
@@ -17,12 +24,12 @@
 <body>
 
 <div class="clear">
-<div class="internal_frame">
+<div id="jenkins" class="internal_frame">
   <iframe src="https://ci.service.dsd.io/view/NOMIS%20int%20monitor/">
   </iframe>
 </div>
 
-<div class="internal_frame">
+<div id="kibana" class="internal_frame">
 <iframe src="http://search.noms.dsd.io/_plugin/kibana/#/dashboard/API-clients?embed&_a=(filters:!(),panels:!((col:1,id:API-clients,row:1,size_x:12,size_y:4,type:visualization),(col:1,id:Prod-requests-over-time,row:5,size_x:12,size_y:3,type:visualization)),query:(query_string:(analyze_wildcard:!t,query:'*')),title:'API%20clients')&embed=true&_g=(refreshInterval:(display:'5%20minutes',pause:!f,section:2,value:300000),time:(from:now-12h,mode:quick,to:now))" height="600" width="800"></iframe>
 </div>
 </div>

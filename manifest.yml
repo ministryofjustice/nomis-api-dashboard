@@ -1,0 +1,5 @@
+---
+applications:
+- name: nomis-api-dashboard
+  memory: 128M
+  buildpack: staticfile_buildpack
